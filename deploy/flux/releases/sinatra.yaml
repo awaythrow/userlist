@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: userlist
-  namespace: sinatra
+  namespace: default
   annotations:
     fluxcd.io/automated: "true"
     # Uncomment this and specify a semver pattern to restrict

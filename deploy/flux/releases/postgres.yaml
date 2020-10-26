@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: postgres
-  namespace: sinatra
+  namespace: default
   annotations:
     fluxcd.io/automated: "false"
 spec:
