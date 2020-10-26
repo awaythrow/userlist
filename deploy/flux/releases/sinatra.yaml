@@ -27,7 +27,7 @@ spec:
       username: postgres
       name: sinatra-prod
       password:
-        secretName: postgres-postgresql
+        secretName: db-creds
         secretKey: postgresql-password
     ingress:
       enabled: false
