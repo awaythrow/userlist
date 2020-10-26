@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    created-by: flux
+    git-repo: https://github.com/awaythrow/userlist.git/main
+    app: userlist
+  name: sinatra
