@@ -12,4 +12,5 @@ spec:
     repository: https://charts.bitnami.com/bitnami
     name: postgresql
     version: 9.8.6
-  values: {}
+  values:
+    existingSecret: db-creds
