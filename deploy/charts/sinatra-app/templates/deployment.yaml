@@ -39,9 +39,9 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           envFrom:
             - configMapRef:
-                name: {{ include "sinatra-example.fullname" . }}
+                name: {{ include "sinatra-app.fullname" . }}
             - secretRef:
-                name: {{ include "sinatra-example.fullname" . }}
+                name: {{ include "sinatra-app.fullname" . }}
           env:
             - name: DATABASE_PASS
               valueFrom:

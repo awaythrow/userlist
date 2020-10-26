@@ -10,7 +10,7 @@ metadata:
     # tags automatically deployed by flux
     # fluxcd.io/tag.chart-image: semver:~1
 spec:
-  releaseName: sinatra-example
+  releaseName: userlist
   chart:
     git: https://github.com/awaythrow/userlist.git
     ref: main
@@ -25,7 +25,7 @@ spec:
       host: postgres-postgresql
       port: 5432
       username: postgres
-      name: sinatra-example
+      name: sinatra-prod
       password:
         secretName: postgres-postgresql
         secretKey: postgresql-password
